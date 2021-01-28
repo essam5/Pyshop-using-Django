@@ -11,5 +11,6 @@ python
 
 * Making Users that can add Products 
 * Making admin that can add products , offers and add Delete users
+* Making loan calc 
 
 
