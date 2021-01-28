@@ -8,9 +8,13 @@ class OfferAdmin(admin.ModelAdmin):
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'price', 'stock')
+    
+    
+class LoanAdmin(admin.ModelAdmin):
+   list_display = ('id', 'name', 'annualInterestRate', 'numberOfYears', 'loanAmount' , 'monthlyPayment')    
 
 
 admin.site.register(Offer,OfferAdmin)
 admin.site.register(Product,ProductAdmin)
-
+admin.site.register(Loan,LoanAdmin)
 
