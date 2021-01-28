@@ -12,3 +12,13 @@ class Offer(models.Model):
     code = models.CharField(max_length=10)
     description = models.CharField(max_length=255)
     discount = models.FloatField()
+    
+    
+class Loan(models.Model):
+    name = models.CharField(max_length=255)
+    annualInterestRate = models.FloatField()
+    numberOfYears = models.IntegerField()
+    loanAmount = models.FloatField()
+    monthlyPayment = models.IntegerField()
+  
+    
